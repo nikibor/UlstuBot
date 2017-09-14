@@ -7,18 +7,13 @@ from nltk.stem.lancaster import LancasterStemmer
 
 stemmer = LancasterStemmer()
 
-training_data = [{"class": "greeting", "sentence": "как дела?"},
-                 {"class": "greeting", "sentence": "как прошел твой день?"},
-                 {"class": "greeting", "sentence": "добрый день"},
-                 {"class": "greeting", "sentence": "что делаешь сегодня?"},
-                 {"class": "goodbye", "sentence": "удачного дня"},
-                 {"class": "goodbye", "sentence": "еще увидимся"},
-                 {"class": "goodbye", "sentence": "удачного вечера"},
-                 {"class": "goodbye", "sentence": "увидемся позже"},
-                 {"class": "lunch", "sentence": "сделай мне сэндвич"},
-                 {"class": "lunch", "sentence": "можешь сделать мне сэндвич?"},
-                 {"class": "lunch", "sentence": "сегодня сэндвич?"},
-                 {"class": "lunch", "sentence": "что на обед?"}]
+training_data = [{"class": "news", "sentence": "что происходит в городе"},
+                 {"class": "news", "sentence": "какие новости"},
+                 {"class": "news", "sentence": "что произошло"},
+                 {"class": "news", "sentence": "новости сегодня"},
+                 {"class": "news", "sentence": "последние новости"},
+                 {"class": "news", "sentence": "как дела?"},
+                 {"class": "news", "sentence": "как дела?"}]
 
 # data = training_data
 training_data = training_data
@@ -79,5 +74,6 @@ def classify(sentence):
 
     return high_class, high_score
 
-
-print(classify(sentence='что сегодня на обед?'))
+s = classify(sentence='что сегодня на обед?')
+print(s)
+print(s[0])
