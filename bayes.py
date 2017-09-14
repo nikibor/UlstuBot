@@ -21,8 +21,12 @@ training_data = [{"class": "news", "sentence": "что происходит в �
                  {"class": "weather", "sentence": "будет дождь"},
                  {"class": "weather", "sentence": "погода в ульяновске"},
                  {"class": "weather", "sentence": "погода в городе"},
-                 {"class": "news", "sentence": "как дела?"},
-                 {"class": "news", "sentence": "как дела?"}]
+                 {"class": "traffic", "sentence": "пробки"},
+                 {"class": "traffic", "sentence": "есть ли пробки"},
+                 {"class": "traffic", "sentence": "ситуация на дорогах"},
+                 {"class": "traffic", "sentence": "затруднения на дорогах"},
+                 {"class": "traffic", "sentence": "аварии в городе"},
+                 {"class": "traffic", "sentence": "пробки на мосту"}]
 
 # data = training_data
 training_data = training_data

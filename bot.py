@@ -26,6 +26,11 @@ def teh_handler(message):
         bot.send_message(message.chat.id, 'Восход ' + res['sunrise'])
         bot.send_message(message.chat.id, 'Закат ' + res['sunset'])
         bot.send_message(message.chat.id, 'Скорость ветра = ' + str(res['windspeed']))
+    elif cat[0] == 'traffic':
+        photo = yandex.TraficJam()
+        img = open('traffic.jpg','rb')
+        bot.send_photo(message.chat.id,img)
+        img.close()
     else:
         bot.send_message(message.chat.id, 'Простите, я вас не понимаю')
 
