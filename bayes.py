@@ -1,7 +1,7 @@
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.lancaster import LancasterStemmer
-import pandas
+
 
 # nltk.download('punkt')
 
