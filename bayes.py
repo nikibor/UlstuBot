@@ -12,6 +12,15 @@ training_data = [{"class": "news", "sentence": "что происходит в �
                  {"class": "news", "sentence": "что произошло"},
                  {"class": "news", "sentence": "новости сегодня"},
                  {"class": "news", "sentence": "последние новости"},
+                 {"class": "news", "sentence": "новости ульяновска"},
+                 {"class": "weather", "sentence": "какая сейчас погода"},
+                 {"class": "weather", "sentence": "погода за окном"},
+                 {"class": "weather", "sentence": "сколько градусов тепла"},
+                 {"class": "weather", "sentence": "скорость ветра"},
+                 {"class": "weather", "sentence": "погода"},
+                 {"class": "weather", "sentence": "будет дождь"},
+                 {"class": "weather", "sentence": "погода в ульяновске"},
+                 {"class": "weather", "sentence": "погода в городе"},
                  {"class": "news", "sentence": "как дела?"},
                  {"class": "news", "sentence": "как дела?"}]
 
