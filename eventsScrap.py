@@ -1,10 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
 from lxml import html
-from lxml import etree
-
-user_id = 12345
-
 
 def read_file(filename):
     with open(filename) as input_file:
@@ -30,6 +25,3 @@ def parseEventsData():
         result.append(titles[i] + text[i].text)
         i += 1
     return result
-
-
-parseEventsData()
