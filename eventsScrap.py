@@ -1,4 +1,5 @@
 import requests
+import lxml.html
 from lxml import html
 
 def read_file(filename):
@@ -11,7 +12,7 @@ def parseEventsData():
     url = 'http://www.uldosug.com/afisha'
     r = requests.get(url)
     with open('test.html', 'w') as output_file:
-        output_file.write(r.text.encode('UTF-8'))
+        output_file.write(str(r.text.encode('UTF-8'),'utf-8'))
     filename = 'test.html'
     text = read_file(filename)
     result = []
@@ -25,3 +26,5 @@ def parseEventsData():
         result.append(titles[i] + text[i].text)
         i += 1
     return result
+
+print(parseEventsData())

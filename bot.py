@@ -35,8 +35,12 @@ def teh_handler(message):
         img.close()
     elif cat[0] == 'events':
         events = eventsScrap.parseEventsData()
+        inter = 0
         for item in events:
             bot.send_message(message.chat.id, item)
+            inter = inter+1
+            if inter == 5:
+                break
     else:
         bot.send_message(message.chat.id, 'Простите, я вас не понимаю')
 
